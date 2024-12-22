@@ -24,6 +24,9 @@ function App() {
   return (
     <>
       <NavBar />
+      <div className="fixed top-0 z-[-2]">
+        <Sketch />
+      </div>
       <div className="flex justify-center items-center p-10">
         <div className="flex gap-4 flex-wrap justify-center items-center max-w-screen-lg">
           {items.map((item) => (

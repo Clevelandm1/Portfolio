@@ -17,7 +17,7 @@ const drawerVariants = {
       duration: 0.1,
     },
     x: "100vw",
-    opacity: 0.5,
+    opacity: 0,
   },
 
   open: {
@@ -30,6 +30,11 @@ const drawerVariants = {
     },
     x: "60vw",
     opacity: 1,
+    zIndex: 10,
+  },
+
+  hide: {
+    opacity: 0,
   },
 };
 
@@ -40,7 +45,7 @@ const overlayVariants = {
     transition: {
       type: "tween",
       ease: "linear",
-      duration: 0.1,
+      duration: 0.2,
     },
     opacity: 1,
     zIndex: 9,
@@ -52,7 +57,7 @@ const overlayVariants = {
     transition: {
       type: "tween",
       ease: "linear",
-      duration: 0.1,
+      duration: 0.2,
     },
     opacity: 0,
   },
@@ -77,7 +82,7 @@ function enableScroll() {
 
 function scrollFunction() {
   console.log("scrolled");
-  window.scrollTo({ top: y, left: x, behavior: "instant" });
+  window.scrollTo({ top: y, left: x, behavior: "auto" });
 }
 
 function Drawer(props: drawerProps) {
@@ -109,7 +114,7 @@ function Drawer(props: drawerProps) {
         variants={drawerVariants}
         initial="close"
         animate={drawerContols}
-        className="bg-neutral-800 top-0 z-[10] fixed"
+        className="bg-neutral-800 top-0 fixed"
       >
         <button onClick={props.toggle}>Toggle</button>
         {props.children}
