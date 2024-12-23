@@ -4,4 +4,9 @@
 
 :root {
   color-scheme: dark;
+  //cursor: url("/public/cursor.svg"), auto;
+}
+
+:button:hover {
+  //cursor: auto;
 }
