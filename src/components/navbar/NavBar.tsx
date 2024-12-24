@@ -38,7 +38,7 @@ function NavBar() {
       <Drawer isDrawerOpen={isOpen} toggle={toggleDrawer}>
         <h2 className="bg-white">hellooooooooo</h2>
       </Drawer>
-      <div className="flex justify-around items-center sticky top-0 z-[2] p-[2%] w-full max-h-[8vh] bg-neutral-800 shadow-black shadow-xl bg-opacity-[.65] backdrop-blur-sm ">
+      <div className="flex justify-around items-center sticky top-0 z-[2] p-[2%] w-full max-h-[8vh] bg-neutral-800 shadow-black shadow-navbar bg-opacity-[.65] backdrop-blur-sm ">
         <HomeButton />
         <ShowcaseButton />
 

@@ -65,7 +65,8 @@ export default {
   			'fade-out': 'fadeOut .3s linear'
   		},
       boxShadow: {
-        'drawer': '-2px 0px 10px 10px',
+        'drawer': '-2px 0px 15px 1px',
+        'navbar': '0px 1px 20px 10px',
       }
   	}
   },

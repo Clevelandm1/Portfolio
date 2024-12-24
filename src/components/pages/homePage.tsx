@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import Sketch from "../../p5/sketchTest";
+import TicTacToe from "../../p5/games/tictactoe";
 import { useState } from "react";
 import Profile from "../content/Profile";
 
@@ -22,15 +22,14 @@ function HomePage() {
 
   return (
     <>
-      <div className="fixed top-0 z-[-2]">
-        <Sketch />
+      <div className="p-4">
+        <TicTacToe />
       </div>
-
-      <div className=" bg-neutral-500 w-[100vw]  p-[5%]">
+      <div className="px-[7%] py-[3%]">
         <Profile />
       </div>
 
-      <div className="flex justify-center items-center p-10">
+      <div className="flex justify-center items-center p-15">
         <div className="flex gap-4 flex-wrap justify-center items-center max-w-screen-lg">
           {items.map((item, index) => (
             <motion.div

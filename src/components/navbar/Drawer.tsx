@@ -81,7 +81,6 @@ function enableScroll() {
 }
 
 function scrollFunction() {
-  console.log("scrolled");
   window.scrollTo({ top: y, left: x, behavior: "auto" });
 }
 
