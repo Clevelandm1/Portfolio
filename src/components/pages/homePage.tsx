@@ -2,6 +2,8 @@ import { motion } from "motion/react";
 import TicTacToe from "../../p5/games/tictactoe";
 import { useState } from "react";
 import Profile from "../content/Profile";
+import CollisionB from "../../p5/games/collision_basic";
+import CollisionA from "../../p5/games/collision_advanced";
 
 function HomePage() {
   const button_dark = [
@@ -23,7 +25,11 @@ function HomePage() {
   return (
     <>
       <div className="p-4">
-        <TicTacToe />
+        <CollisionA/>
+        <br/>
+        <CollisionB />
+        <br/>
+        <TicTacToe/>
       </div>
       <div className="px-[7%] py-[3%]">
         <Profile />

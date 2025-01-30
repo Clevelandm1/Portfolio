@@ -4,7 +4,7 @@ import path from "path"
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/Showcase/',
+  base: '/Portfolio/',
   plugins: [react()],
   resolve: {
     alias: {

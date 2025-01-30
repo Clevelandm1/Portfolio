@@ -173,7 +173,30 @@ function tictactoe(p5: P5CanvasInstance) {
     }
   }
 
+  class gameState {
+    board: Board;
+    state: number;
+    constructor() {
+      this.board = new Board();
+      this.state = 0;
+    }
+
+    setState(state: number) {
+      this.state = state;
+    }
+
+    initialize() {
+      this.board.initializeSpaces;
+    }
+
+    playState() {
+      board.show();
+    }
+  }
+
   let board: Board;
+
+  let game: gameState;
 
   p5.windowResized = () => {
     p5.resizeCanvas(p5.windowWidth * 0.4, p5.windowWidth * 0.4);
@@ -188,6 +211,8 @@ function tictactoe(p5: P5CanvasInstance) {
       board.checkSpacesHit();
     });
     canvas.style("margin-left: auto; margin-right: auto;");
+    game = new gameState();
+    game.initialize();
     board = new Board();
     board.initializeSpaces();
   };

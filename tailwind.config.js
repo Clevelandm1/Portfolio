@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			gabRegular: ['Gab'],
+		},
+
   		screens: {
   			"med": '1050px',
   			'smed': '608px',

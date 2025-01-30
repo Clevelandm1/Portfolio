@@ -12,7 +12,7 @@ function Profile() {
         <motion.img
           className="col-span-1 row-span-1 min-w-0 rounded-md"
           src={
-            "https://github.com/Clevelandm1/Showcase/blob/HomePage/public/images/IMG_8850.JPG?raw=true"
+            "https://github.com/Clevelandm1/Portfolio/blob/HomePage/public/images/IMG_8850.JPG?raw=true"
           }
           onLoad={() => setLoaded(true)}
           whileHover={{ scale: 1.02 }}
