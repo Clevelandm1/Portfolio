@@ -3,12 +3,12 @@ import "./App.css";
 import Sketch from "./p5/sketchTest";
 import { useState } from "react";
 import NavBar from "./components/navbar/NavBar";
-import HomePage from "./components/pages/mainPage";
+import MainPage from "./components/pages/mainPage";
 
 function App() {
   return (
     <>
-      <HomePage />
+      <MainPage />
     </>
   );
 }
