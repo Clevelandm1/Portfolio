@@ -1,9 +1,9 @@
 import { ReactNode, useState } from "react";
 
 interface AlertProps {
-  look: string;
-  children: ReactNode;
-  showAlert: () => void;
+  look?: string;
+  children?: ReactNode;
+  showAlert?: () => void;
 }
 
 const Alert = ({ look, children, showAlert }: AlertProps) => {

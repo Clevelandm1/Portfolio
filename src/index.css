@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  /*cursor: url("/public/cursor.svg"), auto;*/
+}
+
+@font-face {
+  font-family: "Gab";
+  src: local("Gabarito-Variable"),
+    url("./assets/fonts/Gabarito-Variable.ttf") format("truetype");
+}
+
+:button:hover {
+  /*cursor: auto;*/
+}

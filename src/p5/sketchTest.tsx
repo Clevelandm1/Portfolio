@@ -63,7 +63,7 @@ function sketch(p5: P5CanvasInstance) {
   p5.setup = () => {
     canvas = p5.createCanvas(p5.windowWidth, p5.windowHeight);
     canvas.position(0, 0);
-    canvas.style("z-index", "-1");
+    canvas.style("z-index", "-2");
   };
 
   p5.draw = () => {
