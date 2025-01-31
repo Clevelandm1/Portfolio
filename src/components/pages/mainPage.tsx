@@ -3,7 +3,6 @@ import { motion, useInView, useAnimation } from "motion/react";
 import { Blurhash } from "react-blurhash";
 import ImageComponent from "../tools/imageComponent";
 
-
 function MainPage() {
   const button_dark = [
     { boxShadow: "0px 0px 5px #000", backgroundColor: "#262626" },
@@ -15,23 +14,12 @@ function MainPage() {
     { scale: 0.8, y: "30px" },
   ];
 
-  const ref = useRef(null);
-  const isInView = useInView(ref);
-
-  const mainControls = useAnimation();
-
-  useEffect(() => {
-    if (isInView) {
-      mainControls.start("visible");
-    }
-  }, [isInView]);
-
 
 
   return (
     <>
       <div className="p-[5%] flex flex-col items-center gap-4 ">
-        <ImageComponent src="https://github.com/Clevelandm1/Portfolio/blob/HomePage/public/images/IMG_8850.JPG?raw=true"/>
+        <ImageComponent src="https://github.com/Clevelandm1/Portfolio/blob/HomePage/public/images/IMG_8850.JPG?raw=true" />
 
         <motion.div
           className="rounded-[40px]"
@@ -55,11 +43,12 @@ function MainPage() {
             transition: { duration: 0.3 },
           }}
         >
-          <h1 className="font-gabRegular font-bold h1-1 text-4xl pt-2 px-4">
+          <h1 className="font-gabRegular font-bold h1-1 text-4xl pt-3 px-4">
             Hey, I'm Cleveland...
           </h1>
-          <h1 className="font-gabRegular font-bold h1-1 text-2xl pt-3 px-4">
-            Welcome to my Portfolio! Here, you'll find some of my projects, my skills, and some experiences. Scroll to continue!
+          <h1 className="font-gabRegular font-bold h1-1 text-2xl pt-2 pl-10 pb-1">
+            Welcome to my Portfolio! Here, you'll find some of my projects, my
+            skills, and some experiences. Scroll to continue!
           </h1>
         </motion.div>
         <motion.div
@@ -72,18 +61,6 @@ function MainPage() {
           <p className="font-gabRegular text-5xl font-extrabold">
             UNDER CONSTRUCTION...
           </p>
-        </motion.div>
-        <motion.div
-          className=" bg-black h-[4000px]"
-          variants={{
-            hidden: { opacity: 0, y: 75 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial="hidden"
-          animate={mainControls}
-          transition={{ duration: 0.5, delay: 0.25 }}
-        >
-          ok
         </motion.div>
       </div>
     </>
