@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "motion/react";
 import { Blurhash } from "react-blurhash";
 import ImageComponent from "../tools/imageComponent";
+import NavBar from "../navbar2/navBar";
 
 function MainPage() {
   const button_dark = [
@@ -18,6 +19,10 @@ function MainPage() {
 
   return (
     <>
+      <NavBar><>
+        <img></img>
+      </></NavBar>
+
       <div className="p-[5%] flex flex-col items-center gap-4 ">
         <ImageComponent src="https://github.com/Clevelandm1/Portfolio/blob/HomePage/public/images/IMG_8850.JPG?raw=true" />
 
